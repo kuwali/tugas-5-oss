@@ -1,0 +1,6 @@
+<VirtualHost *:9007>
+  DocumentRoot /var/www/html/phabricator/webroot
+
+  RewriteEngine on
+  RewriteRule ^(.*)$          /index.php?__path__=$1  [B,L,QSA]
+</VirtualHost>
